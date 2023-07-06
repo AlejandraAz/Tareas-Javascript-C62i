@@ -1,2 +1,2 @@
 # Tareas-Javascript-C62i
-`En este repositorio se encuentran los primeros ejercicios de inicio con Javascript 😉😊😊.`
+`En este repositorio se encuentran los primeros ejercicios de los trabajos practicos  de inicio con Javascript 😉😊😊.`
