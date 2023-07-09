@@ -14,5 +14,34 @@ Output: Suficiente
 Output: Número erróneo
 Output: Introduce un número válido*/
 
-// let nota = parseInt(prompt('Ingrese su última calificación :'));
 
+do {
+    let nota = parseInt(prompt('Ingrese su última calificación 🤓:'));
+    switch (true) {
+        case (nota === 0 || nota <= 2):
+            alert('😞El rendimiento fue : Muy deficiente😓')
+            break;
+            case (nota <= 4):
+            alert('El rendimiento fue : Insuficiente 🫥😖')
+            break;
+            case (nota <= 6):
+            alert('😌El rendimiento fue : Suficiente 😌')
+            break;
+            case (nota === 7):
+            alert('😊El rendimiento fue : Bien 😉')
+            break;
+            case (nota <= 9):
+            alert('El rendimiento fue : Notable😉👏')
+            break;
+            case (nota === 10):
+            alert('El rendimiento fue : Sobresaliente✨💪')
+            break;
+            case(nota > 10):
+            alert('Introduce un nro válido,recuerda que sólo puedes ingresar números de 0 a 10 🫥....')
+            break;
+            default:
+            alert('😖Dato ingresado incorrecto,sólo debes ingresar números😖')
+            break;
+    }
+    
+} while (confirm('Deseas intentar nuevamente??😏'));
