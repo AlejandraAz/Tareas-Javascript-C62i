@@ -2,7 +2,7 @@
 
 
 
-/*function tablaDeMultiplicar (
+function tablaDeMultiplicar (
     multiplicador = parseInt(prompt('Ingrese el multiplicador de la tabla deseada')),
     multiplicando = parseInt(prompt('Ingrese el multiplicando:'))){
 if(isNaN(multiplicador)){
@@ -13,13 +13,20 @@ if(isNaN(multiplicador)){
         document.write(` ${multiplicador} * ${i} = ${multiplicador * i} <br> <br>`)
     }
 }
-}*/
+}
+
+
+
+
+
+
+
 
 
 // *****************************************************************************************************
 // Función flecha:
 
-const tablaDeMultiplicar2 = (
+/*const tablaDeMultiplicar2 = (
     multiplicador = parseInt(prompt('Ingrese el multiplicador de la tabla deseada:')),
     multiplicando = parseInt(prompt('Ingrese el multiplicando:'))) => {
     if(isNaN(multiplicador)){
@@ -30,4 +37,4 @@ const tablaDeMultiplicar2 = (
             document.write(` ${multiplicador} * ${i} = ${multiplicador * i} <br> <br>`)
         }
     }
-    }
+    }*/

@@ -10,7 +10,7 @@ Output: 58*/
 
 const calcularPerimetroRect = function(
     lado1 = Number(prompt('Ingrese el valor de un lado del rectángulo:')),
-    lado2 =Number(prompt('Ingrese el valor de un lado del rectángulo:'))){
+    lado2 =Number(prompt('Ingrese el valor del otro lado del rectángulo:'))){
     if(isNaN(lado1,lado2)){
         return'Sólo debes ingresar  números.'
     }else {

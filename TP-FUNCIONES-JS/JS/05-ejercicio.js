@@ -2,7 +2,6 @@
 
 
 
-
 const analizarCadena = function (cadena = prompt('Ingrese una cadena de texto:')) {
     if(!isNaN(cadena)){
         return 'Ingresaste un numero,debes ingresar frases,palabras,oraciones.'
