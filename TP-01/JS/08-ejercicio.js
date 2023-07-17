@@ -12,3 +12,12 @@ if(numero % 2 === 0){
     alert('El nro ' + numero + ' no es divisible por 2')
 }
 
+
+// ******Practicando funciones******************************************
+function divisible(numero = parseInt(prompt('Ingrese un número entero : '))){
+    if(numero % 2 === 0){
+        alert('El nro ' + numero + ' es divisible por 2.')
+    }else{
+        alert('El nro ' + numero + ' no es divisible por 2')
+    }
+}

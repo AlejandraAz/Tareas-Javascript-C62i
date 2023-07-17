@@ -18,3 +18,23 @@ if(num2 > num1 && num2 >num3){
 if(num3 > num1 && num3 >num2){
     console.log(`El nro : ${num3}, es el mayor de los números ingresados.`);
 }
+
+// *******PRACTICANDO FUNCIONES*************
+const numeroMayor = (
+    num1 = parseInt(prompt("Ingrese el primer número : ")),
+    num2 = parseInt(prompt("Ingrese el segundo número : ")),
+    num3 = parseInt(prompt("Ingrese el tercer número : "))) => {
+
+        if(isNaN(num1) || isNaN(num2) || isNaN(num3)){
+            console.error("Usted no ha ingresado un número.")
+        }
+        if(num1 > num2 && num1 > num3){
+            console.log(`El nro : ${num1}, es el mayor de los números ingresados.`);
+        }
+        if(num2 > num1 && num2 >num3){
+            console.log(`El nro : ${num2}, es el mayor de los números ingresados.`);
+        }
+        if(num3 > num1 && num3 >num2){
+            console.log(`El nro : ${num3}, es el mayor de los números ingresados.`);
+        }
+}

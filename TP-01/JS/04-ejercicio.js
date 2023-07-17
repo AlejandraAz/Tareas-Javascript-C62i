@@ -5,3 +5,4 @@ Output: Hola Coder*/
 
 let nombreUsuario = prompt("Ingrese su nombre y apellido.").toUpperCase();
 document.write(`Hola! ${nombreUsuario} 😉,cómo estás??`);
+
