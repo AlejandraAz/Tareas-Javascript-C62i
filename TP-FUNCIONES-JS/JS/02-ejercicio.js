@@ -1,20 +1,21 @@
-/* Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.*/
+/*Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y almacenarlas en un arreglo, cuando el usuario selecciona cancelar se debe mostrar el arreglo generado, luego realizar las siguientes acciones:
+Mostrar la longitud del arreglo.
+Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
+Añade en última posición la ciudad de París.
+Escribe por pantalla el elemento que ocupa la segunda posición.
+Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
+ */
 
+let ciudad = prompt('Ingrese nombres de ciudades');
 
-let texto = prompt('Ingrese una frase:');
+let ciudadesIngresadas = [];
+while(ciudad ){
+    for (let i = 0; i < ciudad.length; i++) {
+        ciudadesIngresadas.push(ciudad)
+        document.write(ciudadesIngresadas)
 
-function analizarCadena(cadena) {
-    if(!isNaN(cadena)){
-        document.write('Ingresaste un numero,debes ingresar frases,palabras,oraciones.')
-    }else{
-        if (cadena === cadena.toUpperCase()) {
-            console.log("La cadena está formada solo por mayúsculas.");
-        } else if (cadena === cadena.toLowerCase()) {
-            console.log("La cadena está formada solo por minúsculas.");
-        } else {
-            console.log("La cadena es una mezcla de mayúsculas y minúsculas.");
-        }
     }
-    }
-
-    analizarCadena(texto);
+    
+    ciudadesIngresadas++
+    
+}

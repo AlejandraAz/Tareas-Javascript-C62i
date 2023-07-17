@@ -15,3 +15,20 @@
         }
     } while (edad);
 
+
+    const conduccion = function (name=prompt('Ingrese su nombre')){
+        do {
+                let edad = parseInt(prompt('ingrese su edad'));
+                if(edad >= 18){
+                    alert(`${name} Ya puedes conducir 💪👏😉`)
+                }else{
+                    if(edad <18){
+                        alert(`${name} Aún no tienes edad para conducir 😞`)
+                    }
+                    if(isNaN(edad)){
+                        alert('Dato ingresado incorrecto,sólo debes ingresar números😓')
+                    }
+                }
+            } while (edad);
+    }
+
