@@ -6,16 +6,3 @@ Escribe por pantalla el elemento que ocupa la segunda posición.
 Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
  */
 
-let ciudad = prompt('Ingrese nombres de ciudades');
-
-let ciudadesIngresadas = [];
-while(ciudad ){
-    for (let i = 0; i < ciudad.length; i++) {
-        ciudadesIngresadas.push(ciudad)
-        document.write(ciudadesIngresadas)
-
-    }
-    
-    ciudadesIngresadas++
-    
-}
