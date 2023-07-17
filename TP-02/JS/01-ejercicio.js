@@ -15,7 +15,7 @@
         }
     } while (edad);
 
-
+// ***********pasando a función*********************
     const conduccion = function (name=prompt('Ingrese su nombre')){
         do {
                 let edad = parseInt(prompt('ingrese su edad'));
