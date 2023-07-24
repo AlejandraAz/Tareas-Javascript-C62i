@@ -96,14 +96,14 @@ const mostrarProductos=function(){
 
 
 
-const buscarProductos = function (){
+const buscarProductos=function(palabra){
     let productosEncontrados = [];
     for (let i = 0; i < productos.length; i++) {
-                if (productos[i].nombre.includes(termino) || productos[i].marca.includes(termino) || productos[i].categoria.includes(termino) ) {
-                productosCoincidentes.push(productos[i]);
+                if (productos[i].nombre.includes(palabra) || productos[i].marca.includes(palabra) || productos[i].categoria.includes(palabra) ) {
+                productosEncontrados.push(productos[i]);
             }
             }
-            console.log(productosCoincidentes) ;
+            console.log(productosEncontrados) ;
 }
 
 
