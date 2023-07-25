@@ -89,22 +89,22 @@ let productos = [
 ];
 
 const mostrarProductos=function(){
-    let losProductos = productos.map((producto)=>{
+    let losProductos = productos.forEach((producto)=>{
             document.write(`<ul><li><b><i>Producto:</b> ${producto.nombre}</i><br></li> <li><b><i>Marca:</b> ${producto.marca}</i><br></li> <li><b><i>Detalle:</b> ${producto.detalle}</i><br></li> <li><b><i>Precio:</b> ${producto.precioUnitario}</i><br></li> </ul><hr>`)
     })
 }
 
 
 
-const buscarProductos=function(palabra){
-    let productosEncontrados = [];
-    for (let i = 0; i < productos.length; i++) {
-                if (productos[i].nombre.includes(palabra) || productos[i].marca.includes(palabra) || productos[i].categoria.includes(palabra) ) {
-                productosEncontrados.push(productos[i]);
-            }
-            }
-            console.log(productosEncontrados) ;
-}
+// const buscarProductos=function(palabra){
+//     let productosEncontrados = [];
+//     for (let i = 0; i < productos.length; i++) {
+//                 if (productos[i].nombre.toLowerCase().includes(palabra.toLowerCase()) || productos[i].marca.includes(palabra.toLowerCase()) || productos[i].categoria.includes(palabra.toLowerCase()) ) {
+//                 productosEncontrados.push(productos[i]);
+//             }
+//             }
+//             console.log(productosEncontrados) ;
+// }
 
 
 

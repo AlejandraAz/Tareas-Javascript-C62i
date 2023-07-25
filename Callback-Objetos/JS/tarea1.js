@@ -3,14 +3,10 @@
 
 let users = {
     username:'Ana',
-    state:false,
+    state:true,
     role:'directora',
     estado: function(){
-        if(!users.state){
-            console.log(users.state = true);
-        }else{
-            console.warn(users.state = false);
-        }
+        this.estado = !this.estado;
     },
     infoUser: function(){
             for (const property in this) {
@@ -20,6 +16,7 @@ let users = {
         }
     }
 };
+
 
 
 
