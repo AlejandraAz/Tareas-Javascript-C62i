@@ -92,19 +92,14 @@ const mostrarProductos=function(){
     let losProductos = productos.forEach((producto)=>{
             document.write(`<ul><li><b><i>Producto:</b> ${producto.nombre}</i><br></li> <li><b><i>Marca:</b> ${producto.marca}</i><br></li> <li><b><i>Detalle:</b> ${producto.detalle}</i><br></li> <li><b><i>Precio:</b> ${producto.precioUnitario}</i><br></li> </ul><hr>`)
     })
-}
+};
 
-
-
-// const buscarProductos=function(palabra){
-//     let productosEncontrados = [];
-//     for (let i = 0; i < productos.length; i++) {
-//                 if (productos[i].nombre.toLowerCase().includes(palabra.toLowerCase()) || productos[i].marca.includes(palabra.toLowerCase()) || productos[i].categoria.includes(palabra.toLowerCase()) ) {
-//                 productosEncontrados.push(productos[i]);
-//             }
-//             }
-//             console.log(productosEncontrados) ;
-// }
+const buscador = function(termino){
+        let coincidencias = productos.filter((producto)=>{
+            return producto.nombre.toLowerCase().includes(termino.toLowerCase()) || producto.marca.toLowerCase().includes(termino.toLowerCase()) || producto.categoria.toLowerCase().includes(termino.toLowerCase())
+        }) 
+        console.log(coincidencias)
+};
 
 
 

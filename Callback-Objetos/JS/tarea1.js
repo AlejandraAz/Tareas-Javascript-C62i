@@ -5,12 +5,13 @@ let users = {
     username:'Ana',
     state:true,
     role:'directora',
-    estado: function(){
-        this.estado = !this.estado;
+    cambiarEstado: function(){
+        this.state = !this.state;
+        console.log(this.state)
     },
     infoUser: function(){
             for (const property in this) {
-                if(property != "estado" && property != "infoUser"){
+                if(property != "cambiarEstado" && property != "infoUser"){
                 console.log(`${property} : ${this[property]}`)
                 }
         }
