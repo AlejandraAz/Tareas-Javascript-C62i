@@ -89,7 +89,7 @@ let productos = [
 ];
 
 const mostrarProductos=function(){
-    let losProductos = productos.forEach((producto)=>{
+    productos.forEach((producto)=>{
             document.write(`<ul><li><b><i>Producto:</b> ${producto.nombre}</i><br></li> <li><b><i>Marca:</b> ${producto.marca}</i><br></li> <li><b><i>Detalle:</b> ${producto.detalle}</i><br></li> <li><b><i>Precio:</b> ${producto.precioUnitario}</i><br></li> </ul><hr>`)
     })
 };
