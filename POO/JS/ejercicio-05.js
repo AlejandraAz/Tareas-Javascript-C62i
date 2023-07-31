@@ -24,19 +24,19 @@ class Persona{
                 alert(`Perteneces a la silent-generation, tu rasgo es: la Austeridad 😐`)
                 break;
             case(this.anioNac<=1968):
-                alert(`perteneces a baby-boom, tu rasgo es: la Ambición 🤑`)
+                alert(`Perteneces a baby-boom, tu rasgo es: la Ambición 🤑`)
                 break;
             case(this.anioNac <=1980):
-                alert(`perteneces a generacion X, tu rasgo es: la obsesión por el éxito 😎`)
+                alert(`Perteneces a generacion X, tu rasgo es: la obsesión por el éxito 😎`)
                 break;
             case(this.anioNac <=1993):
-                alert(`perteneces a generacion Y, tu rasgo es: la frustración 😖`)
+                alert(`Perteneces a generacion Y, tu rasgo es: la frustración 😖`)
                 break;
             case(this.anioNac <=2010):
-                alert(`perteneces a generacion Z, tu rasgo es: la Irreverencia 😋`)
+                alert(`Perteneces a generacion Z, tu rasgo es: la Irreverencia 😋`)
                 break;
             default:
-                alert(`perteneces a la generación Alfa,tu rasgo es: el manejo de la tecnología 😁`)
+                alert(`Perteneces a la generación Alfa,tu rasgo es: el manejo de la tecnología 😁`)
                 break;
             }
     }
