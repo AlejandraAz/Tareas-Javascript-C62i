@@ -20,19 +20,19 @@ class Persona{
     }
     mostrarGeneracion(){
         switch (true) {
-            case (this.anioNac >=1930 && this.anioNac <=1948):
+            case (this.anioNac >= 1930 && this.anioNac <=1948):
                 alert(`Perteneces a la silent-generation, tu rasgo es: la Austeridad 😐`)
                 break;
-            case(this.anioNac<=1968):
+            case(this.anioNac >= 1949 && this.anioNac<=1968):
                 alert(`Perteneces a baby-boom, tu rasgo es: la Ambición 🤑`)
                 break;
-            case(this.anioNac <=1980):
+            case(this.anioNac >= 1969 && this.anioNac <=1980):
                 alert(`Perteneces a generacion X, tu rasgo es: la obsesión por el éxito 😎`)
                 break;
-            case(this.anioNac <=1993):
+            case(this.anioNac >= 1981 && this.anioNac <=1993):
                 alert(`Perteneces a generacion Y, tu rasgo es: la frustración 😖`)
                 break;
-            case(this.anioNac <=2010):
+            case(this.anioNac >= 1994 && this.anioNac <=2010):
                 alert(`Perteneces a generacion Z, tu rasgo es: la Irreverencia 😋`)
                 break;
             default:
@@ -57,5 +57,5 @@ class Persona{
     }    
     }
 
-let persona1 = new Persona('Ana Maria','Díaz',50,1973,23824744,'50 kg','1.50 mtrs','M');
+let persona1 = new Persona('Ana Maria','Díaz',50,1992,23824744,'50 kg','1.50 mtrs','M');
 let persona2 = new Persona('Juan','Perez',25,2008,45357241,'70kg','1.85 mts','H')
