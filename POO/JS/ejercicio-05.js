@@ -41,12 +41,11 @@ class Persona{
             }
     }
     mayorDeEdad(){
-        this.edad >= 18 ? console.log(`Eres mayor de edad`) : console.log(`Eres menor de edad`);
-        // if(this.edad >= 18){
-        //     console.log(`eres mayor`)
-        // }else{
-        //     console.log(`eres menor de edad`)
-        // }
+        if(this.edad >= 18){
+            console.log(`Eres mayor.`)
+        }else{
+            console.log(`Eres menor de edad.`)
+        }
     }
     mostrarDatos(){
         document.write(`<strong>------Tarjeta de presentación------</strong><br><br>`)
