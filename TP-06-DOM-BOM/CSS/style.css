@@ -13,7 +13,16 @@ body{
     border-top-right-radius: 20px;
     padding: 20px;
 }
-
+#reloj{
+    border: 3px dashed #fff;
+    font-weight: 300;
+    font-size: xx-large;
+    font-family: 'Alumni Sans Inline One', cursive;
+    color:#fff;
+    background-color: rgb(15, 8, 8);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 #contenedor6{
     border: 2px dashed rgba(223, 18, 195, 0.6);
 }

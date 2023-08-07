@@ -3,20 +3,34 @@
 - Utilizando JavaScript, actualiza el contenido del párrafo para mostrar la
 hora actualizada cada segundo. */
 
-let intervalo = null;
 
-const fechaActual = ()=>{
-    intervalo = setInterval(()=>{
-        let fecha = new Date();
-        document.body.innerText = "";
-        document.write(`<h3>${fecha}</h3>`);
-        document.write(`<button onclick="detener()">Detener</button>`);
-        document.write(`<button onclick="reset()">Resetear</button>`);
-    },1000)
-};
+let reloj = document.getElementById("reloj");
+let relojCompleto = "";
 
-const detener = ()=>clearInterval(intervalo);
+const mostrarReloj = ()=>{
+    let fecha = new Date()
+    let hora = fecha.getHours();
+    let minutos = fecha.getMinutes();
+    let segundos = fecha.getSeconds();
 
-const reset = ()=>{
-    window.location.reload();
-};
+    
+    if(minutos < 10){
+        minutos = "0"+ minutos;
+    }
+    if(segundos < 10){
+        segundos = "0" + segundos
+    }
+
+    let sufijo = "a.m";
+    if(hora > 12){
+        hora = hora - 12;
+        sufijo = "p.m";
+    }
+
+    let relojCompleto = `0${hora}:${minutos}:${segundos} ${sufijo}`
+    reloj.innerHTML = relojCompleto
+}
+
+setInterval(() => {
+    mostrarReloj();
+}, 1000)
