@@ -6,11 +6,16 @@ let parrafo = document.querySelector('#parrafo');
 let bodyU = document.querySelector('body')
 
 parrafo.addEventListener('mouseover',()=>{
-    parrafo.style.color = 'white';
-    bodyU.style.backgroundColor ='black';
+    
+    parrafo.classList = 'text-light';
+    parrafo.style.transition="ease-in 0.5s";
+    bodyU.style.transition="ease-in 1s";
+    bodyU.classList ='bg-dark';
 });
 
 parrafo.addEventListener('mouseout',()=>{
-    parrafo.style.color ='black';
-    bodyU.style.backgroundColor ='white';
+    parrafo.classList ='text-dark';
+    parrafo.style.transition="ease-in 0.5s";
+    bodyU.style.transition="ease-in 1s";
+    bodyU.classList ='bg-light';
 })
