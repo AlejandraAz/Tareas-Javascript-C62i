@@ -6,16 +6,11 @@ let parrafo = document.querySelector('#parrafo');
 let bodyU = document.querySelector('body')
 
 parrafo.addEventListener('mouseover',()=>{
-    
-    parrafo.classList = 'text-light';
-    parrafo.style.transition="ease-in 0.5s";
-    bodyU.style.transition="ease-in 1s";
-    bodyU.classList ='bg-dark';
+    parrafo.classList = 'text-light transition: transform 2s ease';
+    bodyU.classList ='bg-dark transition: transform 2s ease';
 });
 
 parrafo.addEventListener('mouseout',()=>{
-    parrafo.classList ='text-dark';
-    parrafo.style.transition="ease-in 0.5s";
-    bodyU.style.transition="ease-in 1s";
-    bodyU.classList ='bg-light';
+    parrafo.classList ='text-dark transition: transform 2s ease';
+    bodyU.classList ='bg-light transition: transform 2s ease';
 })
