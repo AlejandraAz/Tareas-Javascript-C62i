@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 | DOM-BOM✨</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4  ">
+                <h3 class="my-4"><u>Lista de tareas</u></h3>
+                <form class="input-group">
+                    <input type="text" class="form-control " id="laTarea">
+                    <button class="btn btn-primary" onclick="agregarTareas(event)" id="btnAgregar">Agregar <i class="bi bi-pencil-fill"></i></button>
+                </form>
+            </div>
+            <table class="table   border-secondary table-light table-hover mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Tareas pendientes:</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script src="/JS/ejercicio-07.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
