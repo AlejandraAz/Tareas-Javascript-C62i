@@ -31,6 +31,26 @@ body{
 
 
 
+/* estilos de la galeria modal */
+.paisajes{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: .7;
+    transition: .3s;
+    
+}
+.paisajes:hover{
+    opacity: 1;
+    transform:scale(1.2);
+    margin: 40px;
+    box-shadow: 0 5px 5px rgba(1, 23,46, 0.6);
+    transition: .2s;
+}
+
+
+
 
 
 @media screen and (max-width:570px) {
