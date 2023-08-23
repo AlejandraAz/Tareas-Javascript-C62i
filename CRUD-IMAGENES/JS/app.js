@@ -50,8 +50,8 @@ function cargarEntradas () {
     <div class="card-body">
     <h5 class="card-title ">${imagen.titulo}</h5>
     <p class="card-text ">${imagen.descripcion}</p>
-    <button class="btn btn-danger" onclick="eliminarImg(${index})"><i class="bi bi-x-lg"></i></button>
-    <button class="btn btn-success fw-bold" onclick="mostrarModal(${index})">editar</button>
+    <button class="btn btn-outline-danger" onclick="eliminarImg(${index})"><i class="bi bi-x-lg"></i></button>
+    <button class="btn btn-outline-success fw-bold" onclick="mostrarModal(${index})">editar</button>
     </div>
     </div>`;
     col.innerHTML = tarjeta;
