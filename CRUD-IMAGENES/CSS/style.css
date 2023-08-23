@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bordes{
+    border: 2px solid #1221f1;
+}
+@media screen and (max-width:590px){
+    #bordes{
+        border:none;
+    }
+}
