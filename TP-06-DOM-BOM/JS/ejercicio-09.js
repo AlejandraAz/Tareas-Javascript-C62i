@@ -10,7 +10,6 @@ let images = document.querySelectorAll('img');
 let modalImg = document.querySelector('#img-modal');
 let anterior = document.getElementById('anterior');
 let siguiente = document.getElementById('siguiente');
-let cerrar = document.getElementById('boton_cierre');
 let modal = document.querySelector('#myModal');
 let inicioImg = 0;
 
