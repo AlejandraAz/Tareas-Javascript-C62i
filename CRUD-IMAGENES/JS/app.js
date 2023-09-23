@@ -1,5 +1,9 @@
 import { Imagen } from "../DATA/imagenes.js";
 const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+const myModal2 = new bootstrap.Modal(document.getElementById('myModal2'));
+
+let myCarousel = document.querySelector('#myModal2')
+let carousel = new bootstrap.Carousel(myModal2)
 
 
 /*PRACTICA DE CRUD Y EVENTOS:
@@ -24,6 +28,7 @@ if(imagenes.length > 0){
 
 
 cargarEntradas();
+
 window.guardar_datos = (event) => {
   event.preventDefault();
   let titulo = document.getElementById("inputTitulo").value;
@@ -46,12 +51,12 @@ function cargarEntradas () {
     let col = document.createElement("div");
     col.classList = "col-12 col-md-6 col-lg-4 my-3";
     let tarjeta = `<div class="card  h-100 ">
-    <img src=${imagen.imagen} class="card-img-top h-100" alt=${imagen.titulo} ondblclick="dobleClickImg(${index})" >
+    <img src=${imagen.imagen} class="card-img-top h-100" alt=${imagen.titulo} onclick="verCarrousel(${index})"; ondblclick="dobleClickImg(${index})" >
     <div class="card-body">
     <h5 class="card-title ">${imagen.titulo}</h5>
     <p class="card-text ">${imagen.descripcion}</p>
-    <button class="btn btn-outline-danger" onclick="eliminarImg(${index})"><i class="bi bi-x-lg"></i></button>
-    <button class="btn btn-outline-success fw-bold" onclick="mostrarModal(${index})">editar</button>
+    <button class="btn btn-outline-danger " onclick="eliminarImg(${index})"><i class="bi bi-x-lg"></i></button>
+    <button class="btn btn-outline-success  fw-bold" onclick="mostrarModal(${index})">editar</button>
     </div>
     </div>`;
     col.innerHTML = tarjeta;
@@ -102,36 +107,16 @@ window.dobleClickImg=(index)=>{
 
 
 
-// window.carruselImg = ()=>{
-//   let contenedorCarrousel = document.getElementById('carruselCont');
-//   imagenes.forEach((imagen,index) => {
-//     let carruselImg = document.createElement('div');
-//   let carrousel = `<div id="carouselExample" class="carousel slide">
-//   <div class="carousel-inner">
-//     <div class="carousel-item active">
-//       <img src="${imagen[index].imagen}" class="d-block w-100" alt="${imagen[index].titulo}">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="${imagen[index].imagen}" class="d-block w-100" alt="${imagen[index].titulo}">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="${imagen[index].imagen}" class="d-block w-100" alt="${imagen[index].titulo}">
-//     </div>
-//   </div>
-//   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-//     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-//     <span class="visually-hidden">Previous</span>
-//   </button>
-//   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-//     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-//     <span class="visually-hidden">Next</span>
-//   </button>
-// </div>`;
-// carruselImg.innerHTML=carrousel;
-// contenedorCarrousel.append(carruselImg);
+// window.verCarrousel=()=>{
+//   imagenes.forEach((image,index)=> {
+//     let imgModal2 = document.querySelectorAll('img');
+//   imgModal2.src=image[index].imagen;
+//   imgModal2.alt=image[index].titulo;
+//   $('.carousel').carousel();
+
 //   });
+//   myModal2.show();
 // }
-// myModal.show()
 
 
 
