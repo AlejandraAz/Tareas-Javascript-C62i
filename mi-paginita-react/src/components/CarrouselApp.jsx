@@ -12,33 +12,29 @@ const CarrouselApp = () => {
                 <div className="elCarousel carousel-item active">
                     <img src={atardecer} className="opacity-75  d-block w-100 " alt="atardecer" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h2 className="img-title fw-bold text-primary-emphasis">Turismo de Cordoba</h2>
-                        <p className="text-light bg-dark img-subtitle"><strong>Casco Histórico: Plaza Central San
-                            Martín.</strong></p>
+                        <h2 className="img-title fw-bold text-primary-emphasis">Disfruta de una experiencia inolvidable</h2>
+                        <p className="text-light bg-dark img-subtitle"><strong>Ya sea que estés planeando unas vacaciones en la playa, una aventura en la montaña o un recorrido por la ciudad,</strong></p>
                     </div>
                 </div>
                 <div className="elCarousel carousel-item">
                     <img src={montaña} className="opacity-75 d-block w-100" alt="montaña" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h2 className="img-title fw-bold text-danger-emphasis">Turismo de Cordoba</h2>
-                        <p className="text-light bg-dark img-subtitle"><strong>Casco Histórico: Plaza Central San
-                            Martín.</strong></p>
+                        <h2 className="img-title fw-bold text-danger-emphasis">Planificá tu viaje</h2>
+                        <p className="text-light bg-dark img-subtitle"><strong>No pierdas la oportunidad de descubrir nuevos lugares, probar deliciosa comida local y sumergirte en diferentes culturas. ¡Empieza a planificar tu viaje ahora y prepárate para vivir momentos inolvidables!"</strong></p>
                     </div>
                 </div>
                 <div className="elCarousel carousel-item">
                     <img src={paisaje} className="opacity-75 d-block w-100" alt="paisaje" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h2 className="img-title fw-bold text-danger-emphasis">Turismo de Cordoba</h2>
-                        <p className="text-light bg-dark img-subtitle"><strong>Casco Histórico: Plaza Central San
-                            Martín.</strong></p>
+                        <h2 className="img-title fw-bold text-danger-emphasis">Lugares asombrosos</h2>
+                        <p className="text-light bg-dark img-subtitle"><strong>Este paisaje es un regalo para los sentidos, donde se pueden disfrutar de las maravillas de la tierra y el agua en perfecta armonía.</strong></p>
                     </div>
                 </div>
                 <div className="elCarousel carousel-item">
                     <img src={playa} className="opacity-75 d-block w-100 " alt="playa" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h2 className="img-title fw-bold  text-danger-emphasis">Turismo de Cordoba</h2>
-                        <p className="text-light bg-dark img-subtitle"><strong>Casco Histórico: Plaza Central San
-                            Martín.</strong></p>
+                        <h2 className="img-title fw-bold  text-danger-emphasis">Vacaciones en la playa</h2>
+                        <p className="text-light bg-dark img-subtitle"><strong>Sumérgete en la diversión y relajación de unas vacaciones en la playa. Disfruta del sol, la arena y el mar mientras te desconectas de la rutina y creas recuerdos inolvidables</strong></p>
                     </div>
                 </div>
             </div>
@@ -51,7 +47,7 @@ const CarrouselApp = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-
+            <h2 className='text-uppercase fw-bold mt-4 text-center'>Ofertas exclusivas</h2>
         </div>
     )
 }
